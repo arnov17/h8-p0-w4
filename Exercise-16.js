@@ -4,7 +4,8 @@ function totalDigitRekursif(angka) {
 
   if (arr.length === 1) {
     return Number(angka)
-  } else {
+  } 
+  else {
     var newAngka = Number(arr[0])
     arr = arr.slice(1)
     return newAngka + totalDigitRekursif(Number(arr))

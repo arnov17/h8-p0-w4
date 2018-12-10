@@ -3,9 +3,11 @@ function makanTerusRekursif(waktu) {
 
   if (waktu === 0) {
     return 0
-  } else if (waktu <= 15) {
+  } 
+  else if (waktu <= 15) {
     return 1
-  } else {
+  } 
+  else {
     var sisa = waktu - 15
     counter++
   }

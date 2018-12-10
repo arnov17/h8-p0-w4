@@ -47,7 +47,8 @@ function removeSpaces(str) {
 function passwordGenerator(name) {
   if (name.length < 5 || name === undefined) {
     return 'Minimal karakter yang diinputkan adalah 5 karakter'
-  } else {
+  } 
+  else {
     var ubahVokal = changeVocals(name)
     var balikKata = reverseWord(ubahVokal)
     var lowerUpper = setLowerUpperCase(balikKata)

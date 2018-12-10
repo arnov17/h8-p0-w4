@@ -1,13 +1,13 @@
 function kaliTerusRekursif(angka) {
-  var arr = angka.toString();
+  var arr = angka.toString()
   if (arr.length === 1) {
-    return Number(angka);
+    return Number(angka)
   } else {
-    var jumlah = 1;
+    var jumlah = 1
     for (var i = 0; i < arr.length; i++) {
-      jumlah = jumlah * Number(arr[i]);
+      jumlah = jumlah * Number(arr[i])
     }
-    return kaliTerusRekursif(jumlah);
+    return kaliTerusRekursif(jumlah)
   }
 }
 
