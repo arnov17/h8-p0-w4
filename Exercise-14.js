@@ -12,6 +12,7 @@ function changeVocals(str) {
   str = str.split('O').join('P')
 
   return str
+  
 }
 
 function reverseWord(str) {

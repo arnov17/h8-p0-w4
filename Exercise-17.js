@@ -2,7 +2,9 @@ function kaliTerusRekursif(angka) {
   var arr = angka.toString()
   if (arr.length === 1) {
     return Number(angka)
-  } else {
+  } 
+  
+  else {
     var jumlah = 1
     for (var i = 0; i < arr.length; i++) {
       jumlah = jumlah * Number(arr[i])
