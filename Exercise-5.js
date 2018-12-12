@@ -1,4 +1,5 @@
 
+
 function ubahHuruf(kata) {
     var abjad = 'abcdefghijklmnopqrstuvwxyz'
     
