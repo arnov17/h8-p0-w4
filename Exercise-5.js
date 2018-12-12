@@ -1,9 +1,3 @@
-/*
-init abjad a sampai z untuk pembanding dan dilooping dengan index i
-init hurufBaru untuk menampung nilai baru
-init urutan untuk memasukan nilai indexOf kata dengan index j
-*/
-
 
 function ubahHuruf(kata) {
     var abjad = 'abcdefghijklmnopqrstuvwxyz'
