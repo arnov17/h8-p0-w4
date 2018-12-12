@@ -1,18 +1,19 @@
 function changeVocals(str) {
+  var hurufAwal = ['a', 'i', 'u', 'e', 'o', 'A', 'I', 'U', 'E', 'O'];
+  var hurufUbah = ['b', 'j', 'v', 'f', 'p', 'B', 'J', 'V', 'F', 'P'];
+  var temp = ''
+  for (var i = 0; i < str.length; i++) {
+    for (var j = 0; j < hurufAwal.length; j++) {
+      if (str[i] === hurufAwal[j]) {
+        temp = temp + hurufUbah[j]
+      }
+    }
+    if (i === (temp.length)) {
+      temp = temp + str[i]
+    }
+  }
+  return temp
 
-  str = str.split('a').join('b')
-  str = str.split('i').join('j')
-  str = str.split('u').join('v')
-  str = str.split('e').join('f')
-  str = str.split('o').join('p')
-  str = str.split('A').join('B')
-  str = str.split('I').join('J')
-  str = str.split('U').join('V')
-  str = str.split('E').join('F')
-  str = str.split('O').join('P')
-
-  return str
-  
 }
 
 function reverseWord(str) {
@@ -40,15 +41,21 @@ function setLowerUpperCase(str) {
 }
 
 function removeSpaces(str) {
-  var hasil = str.replace(/\s+/g, '')
+  var temp = ''
+  for(var i = 0; i < str.length; i ++){ 
+      if(str[i] !== ' ') {
+          temp = temp + str[i]
+      }
+  }
+  return temp 
 
-  return hasil
+
 }
 
 function passwordGenerator(name) {
   if (name.length < 5 || name === undefined) {
     return 'Minimal karakter yang diinputkan adalah 5 karakter'
-  } 
+  }
   else {
     var ubahVokal = changeVocals(name)
     var balikKata = reverseWord(ubahVokal)
